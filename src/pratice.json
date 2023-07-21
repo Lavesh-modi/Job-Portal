@@ -1,0 +1,12 @@
+{
+    "name ": "harry",
+    "marks": 45,
+    "isAdmin": false,
+    "license": null,
+    "shopitem ": ["soap","detergent ","cleaner","vimal"],
+"my-obj":{
+    "name ": "Nested",
+    "marks": 8844
+    
+}
+}
