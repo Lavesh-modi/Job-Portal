@@ -27,13 +27,12 @@ function Card() {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card h-100">
+          <div className="card h-100"  >
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5agtxEJ-mlX9253luLkpuEWj4oc4guj2s17gUZklEEA&s" className="card-img-top" alt="TaTa" />
             <div className="card-body">
               <h5 className="card-title">TATA</h5>
               <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
+               Tata motor
               </p>
             </div>
           </div>
@@ -44,9 +43,7 @@ function Card() {
             <div className="card-body">
               <h5 className="card-title">Apple</h5>
               <p className="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+               Apple
               </p>
             </div>
           </div>
