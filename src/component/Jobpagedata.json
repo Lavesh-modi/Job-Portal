@@ -1,0 +1,804 @@
+[
+  {
+    "id": 1,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " ",
+    "link": "https://www.adanipower.com/",
+    "about": "Adani Exports Limited started as a commodity trading company in 1988 and expanded into importing and exporting multiple commodities. With a capital of ₹5 lakhs, the company was established as a partnership firm with the flagship company Adani Enterprises, previously Adani Exports.[22] In 19  90, the Adani Group developed its own port in Mundra to provide a base for its trading operations. It began construction at Mundra in 1995. In 1998, it became the top net foreign exchange earner for India Inc.[23] The company began coal trading in 1999, followed by a joint venture in edible oil refining in 2000 with the formation of Adani Wilmar"
+  },
+
+  {
+    "id": 2,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAAB0CAMAAAABxwg6AAAAkFBMVEX///+/oWEAAAAfGReRkJDQz88PAwD7+/tvbW319fXr6+u9nltkYWDW1dXa2dkZEg/j4+O7u7tBPz+7m1SjoqLKycmtrKyzs7OGhYU8OTi5l0wIAABeXV12dHTw6t7Dp2zOuIzJsH5LSkosKSlUVFTSvpfczbB+fX2amZng1Lvo3svYx6b49O40MjLGrHUlIyOO8xy4AAAK4UlEQVR4nO2aaXu6uhLAMSwhkV1RLGBbwINttX7/b3dnAoGguPQ893/k3Nt5YVlC8sswmSVU037lV54k9LDdHuizKX4m28+v99mLkPn37mN7eDbQQ0I/32eLxXwmZb6Yv+62z6a6K4ev+UsP3cG/vH88m+ymHL5ml9QN+vz789l01+XzdTGO3ZjMbqq2/nVF2x366ySVTncvt7lR6RMkp983zKRHn9wapW+PcM9mL1PT+YPcoPNpufSPR7lhhT6bVZXtw9xAvns2rSLfdxzhQBbTMZaPn3DPZpMxlsP3j7hni6n4xI+7kWco8++JpOk/snCUl2lY+fZqQnhtQvO3ZzML+WvEF85nr++73fv36xX4SdjK2wXbfPH12aAdPkZTmPkUAj+9xBok3mPJ7vyvp+H2cjj3KYszqpF0YBLRc3sGfplzv1/a0vsEjPxzCH6ub200k5kC+NASFiNGcBlZ568TKD+H4PMxogu/Mw1w1VTG3cUl+PcEwIc2PgZE3ye5OFWv0sXyQTJyeL0An4I7VP24dIV0YDGfF15l/vUM0jOhij4XraV8vqkNzrGnskuxU5ZeC75TvAbdjWyCTiKvVQq3ds0dvvvwOb7h8jRYVbbK2mzAPxfzd3FADx9j27eLKZi4plRAEhySEyhyDruvt9novsVU6vzOk7fgmJugw/sY2eJX5/d06fxKG1ea1XgYr41mY/njs+RzLsHRmTQ1qLDjUfLW/ichry258IJfi95z7EbIp2LhKLLQFwFIKlbwXZKPJOxPlNYmcPf7IMGFJdPzzHBau7VSs1hGDMHBNw7z9Slk4qq0ARLVeQZ+UDe65i8T49akZrdd7rKQzpq+duTz2YQWphShc0z7mgRdcXpbST4frTOeL+AHRQgS61GNMlvxaX/+8jZNbqFa3Ig9LM5rnO0bgH9/TiTSjwj9ekELgcJ/fgZ5OExV260c3tBE/ppGpfAzEZr9F3L/yq/8P8iSEOMpA5uhKrHL7j5BGfdMtz2Jia+T8M8ijktNzqWOb7U3mkYll6e6btX/BOi5cC92LF33s8DzPNMoU59Y9Q21B25gp7ofteArACerfwb1Uipft5z22EaS7GamEZAeXMsJsf8s3Q2xrR6cwizu6JBHfg9Og+B5+ZQKDssNrDa6BcMLBfypMgCnAK6TW85lquC+/y8FB437qWoqNDDD2OtJWaWCU6pOkgdxaAbKrOA241z04sbm+Xpg0DwOBkoANwc93A8nF+AcbTxT7oaO8Nx6LoNOB84Mw6hzpwhkUy/Rm7Z1y+LluVMVJfgd00nxjh0oPbN9IZpHy/5SEolLxVJ7QAbgS/SHfSzkNiFJoLElILWdsawF59GJpJZFvLbtHsI/gIUbK22vudmR+H6aYaCKohSibNmTxz45LTlM3yebVsOhTjYh07wMZvOAMarg/Oirfpw5JG18I3ibdj4dOLx+jJwSfE98Ig48oluV7C+zdL/ak6XHeYzkScedWr4pmkR+ezUmaSGmQCsrjX4EziPLJ3lviXWfQ9mpf2JDcBDgasG5DljNZZiOJRMHND1SND26p37dBzDNRhEuBLRTICbs93d1sv8B+Aos7LTuuUF3RCKu4Xh9AQ6MLXiA3sgcNsXWgLVRp9naimP5UUMZyrcGy0CmPQyCXHF3hQK4XlawiAhJhylWZlm2nIbp62ktwTeX4Bos4vb1hlavLwDvF9C+s7ewVykc+jpMx4SnutFrSIhuZnsS3Bfe4CzYB0e/z7aD0rcqVAIFZY2BszhudRSfgXdOatmB53C5dQGsIsLG4eZJrnNlirfBLcyUqqFDEbqwcpmrL0tQtAQfMZVOWOyAtUt/dgUco0X3XBA03erlSo6WW7213QTHtxlsfN0vFTe0xpl0klrpUYDbN8CpW29E0nAbHMPcaejwGPgzvx8N3OzddLlbnB4Gn6pfm/C+0sQ1FaFN+1FTAZwYIlC1DMy7GkdfcxouPqb7/jFUBwu0O9J7FRF9Ok8rxhlxSvkVjYeRRQos/nBxSnXdAD/TOILfZb0CjmtGMXOw8XSkLsvHNV6DG270HFoDd3jXxpuGEfhT8++C0xIMLZXzjjHqXabm4+BQxUk3/Ag4ONeh16B5+tO6Ww35YJ5QR7TWxzd+H4DugLMCnKr3MDgUrmlvk93Nn9XdF0lWKstIVIKybRIkYkb1GDhXKtF1ehdcRp1W3CWkVmcVjPFIAOrBtSrt41CAnq3rnlYN41VweXWlRI8r4KzwVf0W+GKhUFc8Q0x6piuSgV1X3RlEyN4Ng0P0SxkZ7VaNAH5UwcWKQjdMZCI5dId95/s+iTHRDbRvkzsi1vMSs0cquYt7ie1KR+m9/VoEkKZuoDbxrVPiMspXRTsOLv/OS8KxZYv3mwChv+LMy8myhHzP7Hs7tbCQrepN2iAmAd3YIaPBatPOxiVgY9mKU2YmxL/tGtWdrM6y2/MjnixLYqXNqXjJ+6i9Cy9yXbbHIit1kASrFw89IwTBiPFM9g3Wspety2ZO4QbDI0oliyssW5pLJL+TG66NXqTSg/a80WqwFKibVfPm1olsDq9THieiksMqiVRrGJHudWLZpsa7vqGvsGvd2h5fVUIDYc9I49q6vw/4uNA/t+kz0vN0v9j9yq/8yq/8yq/8rwmPTfOxPWr22Bb/eDN67QMSg/Fvd2xCizi8YAxWhDxUuNL65F25xcK+a2ZvxrLUlX9l04evj3f2gzzDJ3Y8Mu+YuJcXRZ+xOk1WH6+BU8izow48GgXXMVX2zJHxg7uFc05GM/ar4Kvhq7hlKstea1eaiaHzcuTmI+CNymDWXHbAAmo24LT70XhAGcWSpm/f32z2/8SjrPsqpIC3zfAhps4DL9fyg4TsAzvhj4EHeVUHTrFpagcj2+cOgAd2ZUNVkomvPEa+dzac5YWV2Qk0ydw6SqidZXgzyIzEwZmunL1dySqgA4c+nEDjWZZ4ThSttaTaYLmVZEWoefZGd5w1NkqSQmhrmRkw/mMap4W/p1BnB3iIHxByofGy1LA69LAzOMIaeQU3KFbJOS+OFKo0nDfuZS+hUo/xY4otSylF4zZ+/GHRaa9RBz9hrUTVGooGuSi9hYpX2JvtMxz0QXAbaePmYdRYY+NZKbqHFjm6hZgjjbBxtBh8tfsUbtYlzMWDyl4MHMhFoIAn4qtVhYOI/vkRNyJc0aAW2xo1bgUHMB9TbBY8auMSfI3b5GwE3INiesU0BbxZvAaCW0cjSeqjoQUlqVbdUrsExxL/Cnh0TEDgsniH/z1wKKGPBLdYxsBJRDnnjOG3y4iczm2c0/vgdFPxpg9hr38HPBfbhS34sQWnOEKs2+PgxantDN22u3HoAJxF/Da4sPHK6p4yfwCu2YWG20shPpJr0l3nOsN1CODCVYA7gX7DBrzxinvUTyg2rmJDc/CvYXcIYpkmBZqKgKuEPzXPwMWGcyiWa5xojFRaq8MbEhonUhmMLnVSs9ghRYw9O/skJ8UeH68MIyHgtapiH+8rjsZeJokWFsRBqnVEbA/xbaOuwS2lRryKmikxY0M2xt6AnjQIouBK8NMziwuSubwm5V5zbewZxivqJU7TMRLcB4JB90lCjsktcM90Xdek1MRfODFxUA4ZDjNFpAgg2eIuGKlHTbPxFoHrMs2FpniKT/PmEbEQGOQnbTihomsQ12ubxfCH4SDQDC7AQ8148Mv6PmDKphlQ98H/RPiVX7mQ/wDeDci0NWpKtwAAAABJRU5ErkJggg==",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " ",
+    "about": "The Reliance Group strongly believes that it has a pivotal role to play in shaping the destiny of our great nation. Through its various consumer-facing businesses, the Group provides a robust platform to every Indian to realize his/ her potential through its state-of-the-art products and services."
+  },
+
+  {
+    "id": 3,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 4,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 5,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 6,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 7,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 8,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 9,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 10,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAAB0CAMAAAABxwg6AAAAkFBMVEX///+/oWEAAAAfGReRkJDQz88PAwD7+/tvbW319fXr6+u9nltkYWDW1dXa2dkZEg/j4+O7u7tBPz+7m1SjoqLKycmtrKyzs7OGhYU8OTi5l0wIAABeXV12dHTw6t7Dp2zOuIzJsH5LSkosKSlUVFTSvpfczbB+fX2amZng1Lvo3svYx6b49O40MjLGrHUlIyOO8xy4AAAK4UlEQVR4nO2aaXu6uhLAMSwhkV1RLGBbwINttX7/b3dnAoGguPQ893/k3Nt5YVlC8sswmSVU037lV54k9LDdHuizKX4m28+v99mLkPn37mN7eDbQQ0I/32eLxXwmZb6Yv+62z6a6K4ev+UsP3cG/vH88m+ymHL5ml9QN+vz789l01+XzdTGO3ZjMbqq2/nVF2x366ySVTncvt7lR6RMkp983zKRHn9wapW+PcM9mL1PT+YPcoPNpufSPR7lhhT6bVZXtw9xAvns2rSLfdxzhQBbTMZaPn3DPZpMxlsP3j7hni6n4xI+7kWco8++JpOk/snCUl2lY+fZqQnhtQvO3ZzML+WvEF85nr++73fv36xX4SdjK2wXbfPH12aAdPkZTmPkUAj+9xBok3mPJ7vyvp+H2cjj3KYszqpF0YBLRc3sGfplzv1/a0vsEjPxzCH6ub200k5kC+NASFiNGcBlZ568TKD+H4PMxogu/Mw1w1VTG3cUl+PcEwIc2PgZE3ye5OFWv0sXyQTJyeL0An4I7VP24dIV0YDGfF15l/vUM0jOhij4XraV8vqkNzrGnskuxU5ZeC75TvAbdjWyCTiKvVQq3ds0dvvvwOb7h8jRYVbbK2mzAPxfzd3FADx9j27eLKZi4plRAEhySEyhyDruvt9novsVU6vzOk7fgmJugw/sY2eJX5/d06fxKG1ea1XgYr41mY/njs+RzLsHRmTQ1qLDjUfLW/ichry258IJfi95z7EbIp2LhKLLQFwFIKlbwXZKPJOxPlNYmcPf7IMGFJdPzzHBau7VSs1hGDMHBNw7z9Slk4qq0ARLVeQZ+UDe65i8T49akZrdd7rKQzpq+duTz2YQWphShc0z7mgRdcXpbST4frTOeL+AHRQgS61GNMlvxaX/+8jZNbqFa3Ig9LM5rnO0bgH9/TiTSjwj9ekELgcJ/fgZ5OExV260c3tBE/ppGpfAzEZr9F3L/yq/8P8iSEOMpA5uhKrHL7j5BGfdMtz2Jia+T8M8ijktNzqWOb7U3mkYll6e6btX/BOi5cC92LF33s8DzPNMoU59Y9Q21B25gp7ofteArACerfwb1Uipft5z22EaS7GamEZAeXMsJsf8s3Q2xrR6cwizu6JBHfg9Og+B5+ZQKDssNrDa6BcMLBfypMgCnAK6TW85lquC+/y8FB437qWoqNDDD2OtJWaWCU6pOkgdxaAbKrOA241z04sbm+Xpg0DwOBkoANwc93A8nF+AcbTxT7oaO8Nx6LoNOB84Mw6hzpwhkUy/Rm7Z1y+LluVMVJfgd00nxjh0oPbN9IZpHy/5SEolLxVJ7QAbgS/SHfSzkNiFJoLElILWdsawF59GJpJZFvLbtHsI/gIUbK22vudmR+H6aYaCKohSibNmTxz45LTlM3yebVsOhTjYh07wMZvOAMarg/Oirfpw5JG18I3ibdj4dOLx+jJwSfE98Ig48oluV7C+zdL/ak6XHeYzkScedWr4pmkR+ezUmaSGmQCsrjX4EziPLJ3lviXWfQ9mpf2JDcBDgasG5DljNZZiOJRMHND1SND26p37dBzDNRhEuBLRTICbs93d1sv8B+Aos7LTuuUF3RCKu4Xh9AQ6MLXiA3sgcNsXWgLVRp9naimP5UUMZyrcGy0CmPQyCXHF3hQK4XlawiAhJhylWZlm2nIbp62ktwTeX4Bos4vb1hlavLwDvF9C+s7ewVykc+jpMx4SnutFrSIhuZnsS3Bfe4CzYB0e/z7aD0rcqVAIFZY2BszhudRSfgXdOatmB53C5dQGsIsLG4eZJrnNlirfBLcyUqqFDEbqwcpmrL0tQtAQfMZVOWOyAtUt/dgUco0X3XBA03erlSo6WW7213QTHtxlsfN0vFTe0xpl0klrpUYDbN8CpW29E0nAbHMPcaejwGPgzvx8N3OzddLlbnB4Gn6pfm/C+0sQ1FaFN+1FTAZwYIlC1DMy7GkdfcxouPqb7/jFUBwu0O9J7FRF9Ok8rxhlxSvkVjYeRRQos/nBxSnXdAD/TOILfZb0CjmtGMXOw8XSkLsvHNV6DG270HFoDd3jXxpuGEfhT8++C0xIMLZXzjjHqXabm4+BQxUk3/Ag4ONeh16B5+tO6Ww35YJ5QR7TWxzd+H4DugLMCnKr3MDgUrmlvk93Nn9XdF0lWKstIVIKybRIkYkb1GDhXKtF1ehdcRp1W3CWkVmcVjPFIAOrBtSrt41CAnq3rnlYN41VweXWlRI8r4KzwVf0W+GKhUFc8Q0x6piuSgV1X3RlEyN4Ng0P0SxkZ7VaNAH5UwcWKQjdMZCI5dId95/s+iTHRDbRvkzsi1vMSs0cquYt7ie1KR+m9/VoEkKZuoDbxrVPiMspXRTsOLv/OS8KxZYv3mwChv+LMy8myhHzP7Hs7tbCQrepN2iAmAd3YIaPBatPOxiVgY9mKU2YmxL/tGtWdrM6y2/MjnixLYqXNqXjJ+6i9Cy9yXbbHIit1kASrFw89IwTBiPFM9g3Wspety2ZO4QbDI0oliyssW5pLJL+TG66NXqTSg/a80WqwFKibVfPm1olsDq9THieiksMqiVRrGJHudWLZpsa7vqGvsGvd2h5fVUIDYc9I49q6vw/4uNA/t+kz0vN0v9j9yq/8yq/8yq/8rwmPTfOxPWr22Bb/eDN67QMSg/Fvd2xCizi8YAxWhDxUuNL65F25xcK+a2ZvxrLUlX9l04evj3f2gzzDJ3Y8Mu+YuJcXRZ+xOk1WH6+BU8izow48GgXXMVX2zJHxg7uFc05GM/ar4Kvhq7hlKstea1eaiaHzcuTmI+CNymDWXHbAAmo24LT70XhAGcWSpm/f32z2/8SjrPsqpIC3zfAhps4DL9fyg4TsAzvhj4EHeVUHTrFpagcj2+cOgAd2ZUNVkomvPEa+dzac5YWV2Qk0ydw6SqidZXgzyIzEwZmunL1dySqgA4c+nEDjWZZ4ThSttaTaYLmVZEWoefZGd5w1NkqSQmhrmRkw/mMap4W/p1BnB3iIHxByofGy1LA69LAzOMIaeQU3KFbJOS+OFKo0nDfuZS+hUo/xY4otSylF4zZ+/GHRaa9RBz9hrUTVGooGuSi9hYpX2JvtMxz0QXAbaePmYdRYY+NZKbqHFjm6hZgjjbBxtBh8tfsUbtYlzMWDyl4MHMhFoIAn4qtVhYOI/vkRNyJc0aAW2xo1bgUHMB9TbBY8auMSfI3b5GwE3INiesU0BbxZvAaCW0cjSeqjoQUlqVbdUrsExxL/Cnh0TEDgsniH/z1wKKGPBLdYxsBJRDnnjOG3y4iczm2c0/vgdFPxpg9hr38HPBfbhS34sQWnOEKs2+PgxantDN22u3HoAJxF/Da4sPHK6p4yfwCu2YWG20shPpJr0l3nOsN1CODCVYA7gX7DBrzxinvUTyg2rmJDc/CvYXcIYpkmBZqKgKuEPzXPwMWGcyiWa5xojFRaq8MbEhonUhmMLnVSs9ghRYw9O/skJ8UeH68MIyHgtapiH+8rjsZeJokWFsRBqnVEbA/xbaOuwS2lRryKmikxY0M2xt6AnjQIouBK8NMziwuSubwm5V5zbewZxivqJU7TMRLcB4JB90lCjsktcM90Xdek1MRfODFxUA4ZDjNFpAgg2eIuGKlHTbPxFoHrMs2FpniKT/PmEbEQGOQnbTihomsQ12ubxfCH4SDQDC7AQ8148Mv6PmDKphlQ98H/RPiVX7mQ/wDeDci0NWpKtwAAAABJRU5ErkJggg==",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 11,
+    "Role": "BPOooo",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 12,
+    "Role": "Mern stack0000",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 13,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 14,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 15,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 16,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 17,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 18,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 19,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 20,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 21,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 22,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 23,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 24,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 25,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 26,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 27,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 28,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 29,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 30,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 31,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 32,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 33,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 34,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 35,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 36,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 37,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 38,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 39,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 40,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 41,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 42,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 43,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 44,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 45,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 46,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 47,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 48,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 49,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 50,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 51,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 52,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 53,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 54,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 55,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 56,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 57,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 58,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 59,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 60,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 61,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 62,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 63,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 64,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 65,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 66,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 67,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 68,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 69,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 70,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 71,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 72,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 73,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 74,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 75,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 76,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 77,
+    "Role": "Mern stack",
+    "imgsrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvssLz_nkX00-Ep0fTByUI5pCOw_sGpHx6hr4mFy33ZA&s",
+    "name": "Apple",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 78,
+    "Role": "Software ",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Adani_2012_logo.png",
+    "name": "Adani",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 79,
+    "Role": "Software Ananlyst ",
+    "imgsrc": "data:image/png;base64,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",
+    "name": "Reliance",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  },
+
+  {
+    "id": 80,
+    "Role": "BPO",
+    "imgsrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Tata_logo.svg/1116px-Tata_logo.svg.png",
+    "name": "Tata",
+    "icon1": " ",
+    "icon2": " ",
+    "icon3": " "
+  }
+]
