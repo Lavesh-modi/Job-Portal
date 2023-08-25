@@ -13,6 +13,7 @@ import {
 import Data from "../component/Jobpagedata.json";
 import Nodal from "../component/Nodal";
 import Modal2 from "../component/Modal2";
+import Modal3 from "../component/Modal3";
 // import Footer from "../component/Footer";
 
 export default function Jobpage() {
@@ -114,6 +115,13 @@ export default function Jobpage() {
                     ></Modal2>
 
                     <div className="card-body">
+                    {/* <button 
+                    
+                    onClick={() => toggleModal2(obj._id)}                   
+                    type="button" class="btn btn-info">update</button> */}
+                   <Modal3 creatingapi={creatingapi} setCreatingapi={setCreatingapi} ></Modal3>
+                    
+                    
                       <h4 className="role">{obj.Role}</h4>
                       
                       <img

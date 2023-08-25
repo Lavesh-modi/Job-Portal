@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import jwt_decode from "jwt-decode";
 // import { useEffect } from "react";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -86,6 +87,8 @@ export default function Login() {
       //   }),
       // });
 
+      // const navigate = useNavigate();
+
       const response = await Axios.post(
         "http://localhost:5000/api/v1/createLogin",
         {
@@ -98,8 +101,34 @@ export default function Login() {
         console.log("Login successful!");
         // Perform any necessary actions upon successful login
         setEmailExists(true);
+
+        var token =
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGRmMGVkYzg1NGVmYTVlOGViY2U0NjUiLCJlbWFpbCI6ImxhdmVzaGVkdUBnbWFpbC5jb20iLCJpYXQiOjE2OTI3ODUzOTcsImV4cCI6MTY5Mjc4ODk5N30.O-PHtBpbp1xtwzrmY6IyJ-NPyQl0D91XVVLMfZ-LG3s";
+        var decoded = jwt_decode(token)
+        // response.cookie("jwt cookie ", email, {
+        //   httpOnly: false, // Cookie cannot be accessed via JavaScript
+        //   maxAge: 3600000,
+        // });;
+
+        console.log(decoded);
+
+        var email = decoded.email;
+
+// Set the email as a cookie
+// document.cookie = `email=${encodeURIComponent(email)}; expires=${new Date(decoded.exp * 1000)}; path=/`;
+document.cookie = `email=${email}; expires=${new Date(decoded.exp * 1000)}; path=/`;
+
+console.log("Email saved as a cookie:", email);
+
+        
+
+        
+
+
+
+
         // Navigate to the dashboard
-        // navigate("/dashboard");
+        navigate("/dashboard");
         // window.location.href = "/dashboard";
       } else {
         console.log("Incorrect email & password");
