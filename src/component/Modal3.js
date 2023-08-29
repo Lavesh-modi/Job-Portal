@@ -4,23 +4,32 @@ import Axios from "axios";
 
 export default function Modal3({
   issOpen,
-  toggleModal3,
+  openButton,
   selectCardIdUpdate,
   close,
-  updated,
-  setUpdated
+  updatedapi,
+  setUpdatedapi,
 }) {
   // const [isOpen, setIsOpen] = useState(false);
   const [many, setMany] = useState("");
 
-  console.log("selectcard id  34 ", selectCardIdUpdate);
+  //   const [name, setName] = useState('');
+  // const [selectedRole, setSelectedRole] = useState('');
+  // const [about, setAbout] = useState('');
+
+  console.log("selectcard id  updated api  ", selectCardIdUpdate);
 
   useEffect(() => {
-    console.log("Calleed useEffects 34");
+    console.log("Calleed useEffects updated api to get by id ");
     Axios.get(`http://localhost:5000/api/v1/getcardsID/${selectCardIdUpdate}`)
-      .then((res) => setMany(res.data.data))
+      .then((res) => {
+        setMany(res.data.data);
+        console.log("hello res.data", res.data.data);
+      })
+
       .catch((err) => console.log(err));
-      setUpdated(toggleModal3);
+    // setUpdated(openButton);
+    // console.log("many",many)
   }, [selectCardIdUpdate]);
 
   //   Axios.get(`http://localhost:5000/api/v1/getcardsID/${ selectCardId}`)
@@ -34,8 +43,30 @@ export default function Modal3({
   // ;
   // console.log("checkeerrrr", state);
 
+  // console.log(many.Role,"access them in role")
+
   const handlesubmit = (e) => {
     e.preventDefault();
+
+    const updatedData = {
+      name: many.name,
+      Role: many.Role,
+      About: many.About,
+    };
+    console.log("updatedData", many);
+
+    Axios.put(
+      `http://localhost:5000/api/v1/updateCards/${selectCardIdUpdate}`,
+      updatedData
+    )
+      .then((response) => {
+        console.log("Update successful:", response.data);
+        setUpdatedapi(updatedData); // Notify parent component that data has been updated
+        close(); // Close the modal
+      })
+      .catch((error) => {
+        console.error("Update error:", error);
+      });
     // setUpdater(toggleModal3)
     // console.log("the name is");
     // console.log(,update)
@@ -97,7 +128,7 @@ export default function Modal3({
               class="close"
               data-dismiss="modal"
               aria-label="Close"
-              onClick={toggleModal3}
+              onClick={close}
             >
               <span aria-hidden="true">&times;</span>
             </button>
@@ -110,7 +141,9 @@ export default function Modal3({
                 <input
                   className=" form-control"
                   name="Name"
+                  value={many.name}
                   placeholder="Name"
+                  onChange={(e) => setMany({ ...many, name: e.target.value })}
                 ></input>
               </div>
               <div class="form-row align-items-center">
@@ -121,6 +154,8 @@ export default function Modal3({
                   <select
                     class="custom-select mr-sm-2"
                     id="inlineFormCustomSelect"
+                    value={many.Role}
+                    onChange={(e) => setMany({ ...many, Role: e.target.value })}
                   >
                     <option selected>Choose...</option>
                     <option value="Mern Stack">Mern Stack</option>
@@ -142,6 +177,10 @@ export default function Modal3({
                       class="form-control"
                       id="exampleFormControlTextarea1"
                       rows="2"
+                      value={many.About}
+                      onChange={(e) =>
+                        setMany({ ...many, About: e.target.value })
+                      }
                     ></textarea>
                   </div>
                 </div>
@@ -151,7 +190,7 @@ export default function Modal3({
                   type="button"
                   class="btn btn-secondary"
                   data-dismiss="modal"
-                  onClick={toggleModal3}
+                  onClick={close}
                 >
                   Close
                 </button>

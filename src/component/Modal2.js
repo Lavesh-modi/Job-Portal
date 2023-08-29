@@ -8,7 +8,7 @@ import Axios from "axios";
 function Modal2({ isOpen, toggleModal2, selectCardId, update, setUpdate ,updateapi,setUpdateapi}) {
   // const [update,setUpdate] = useState("isOpen")
 
-  console.log("selectcard id ",selectCardId)  
+  console.log("selectcard id   ",selectCardId)  
   
   const handleDelete = (event) => {
     Axios.delete(`http://localhost:5000/api/v1/deleteCards/${selectCardId}`)

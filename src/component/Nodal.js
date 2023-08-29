@@ -138,10 +138,10 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     Axios.post("http://localhost:5000/api/v1/createCards", requestData)
       .then((response) => {
         // Handle the response here if needed
-        console.log("Response:", response.data);
+        console.log("Response: for createCards", response.data);
         toggleModal();
         setCreatingapi(response.data)
-        console.log(setCreatingapi(response.data));
+        // console.log(setCreatingapi(response.data));
         
     // console.log(" setCreatingapi into api ", creatingapi )
         // toggleModal();

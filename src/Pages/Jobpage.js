@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Navbar from "./Navbar";
 
 import Axios from "axios";
-
 import {
   faLocationCrosshairs,
   faPenNib,
@@ -24,44 +23,42 @@ export default function Jobpage() {
   const [creatingapi, setCreatingapi] = useState("");
   const [selectCardIdUpdate, setSelectCardIdUpdate] = useState();
   const [issOpen, setIssOpen] = useState(false);
-  const [updated, setUpdated] = useState("isOpen");
+  // const [updated, setUpdated] = useState("isOpen");
 
   const [updateapi, setUpdateapi] = useState();
+  const [updatedapi,setUpdatedapi] = useState();
 
   function toggleModal2(buttonid) {
     setSelectCardId(buttonid);
     setIsOpen(!isOpen);
   }
 
-  function toggleModal3(buttonid) {
-    setSelectCardIdUpdate(buttonid);
+  // function openButton(buttonid) {
+  //   setSelectCardIdUpdate(buttonid);
+  //   setIssOpen(true);
+  // }
 
-    // setSelectCardId(buttonid);
-    // setIssOpen(!issOpen);
-    setIssOpen(true);
-  }
-
-  function close() {
-    setIssOpen(!issOpen);
-  }
+  // function close() {
+  //   setIssOpen(false);
+  // }
 
   console.log(creatingapi, "?????????????");
   Data = Data.slice(0, 10);
 
   const [bdata, setBdata] = useState([]);
 
-  console.log("targe", creatingapi);
+  console.log("targer creatingapi", creatingapi);
 
   useEffect(() => {
-    // console.log("Calleed useEffects");
+    console.log("Calleed useEffects for all cards");
     Axios.get("http://localhost:5000/api/v1/getcards")
       .then((res) => setBdata(res.data.data))
       .catch((err) => console.log(err));
-    console.log("rssssssssssssss");
-    console.log(".......", updateapi);
+    console.log("all cards ");
+    console.log("updateapi", updateapi);
     console.log("updater", creatingapi);
-  }, [updateapi, creatingapi]);
-  console.log(bdata);
+  }, [updateapi, creatingapi,updatedapi]);
+  // console.log(bdata, "bdata");
 
   // console.log(creatingapi,"checking creatapi")
   // console.log(res.bdata);
@@ -70,6 +67,15 @@ export default function Jobpage() {
   const [renderData, setRenderData] = useState(Data);
   // const lastPostIndex = currentPage * PostsPerPage;
   // const firstPostIndex = lastPostIndex - PostsPerPage;
+
+  function openButton(buttonid) {
+    setSelectCardIdUpdate(buttonid);
+    setIssOpen(true);
+  }
+
+  function close() {
+    setIssOpen(false);
+  }
 
   const myFunction = (a, b) => {
     const re = Data.slice(a, b);
@@ -104,6 +110,7 @@ export default function Jobpage() {
         {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
 </button> */}
+
         <Nodal creatingapi={creatingapi} setCreatingapi={setCreatingapi} />
       </div>
       <br></br>
@@ -123,37 +130,24 @@ export default function Jobpage() {
                       class="btn-close btn-close-white cross "
                       // aria-label="Close"
                     ></button>
-                    <Modal2
-                      isOpen={isOpen}
-                      selectCardId={selectCardId}
-                      toggleModal2={toggleModal2}
-                      update={update}
-                      setUpdate={setUpdate}
-                      updateapi={updateapi}
-                      setUpdateapi={setUpdateapi}
-                    ></Modal2>
+
+                    {isOpen && (
+                      <Modal2
+                        isOpen={isOpen}
+                        selectCardId={selectCardId}
+                        toggleModal2={toggleModal2}
+                        update={update}
+                        setUpdate={setUpdate}
+                        updateapi={updateapi}
+                        setUpdateapi={setUpdateapi}
+                      ></Modal2>
+                    )}
 
                     <div className="card-body">
                       {/* <button 
                     
                     onClick={() => toggleModal2(obj._id)}                   
                     type="button" class="btn btn-info">update</button> */}
-
-                      {/* <button
-                        onClick={() => toggleModal3(obj._id)}
-                        class="btn btn-primary"
-                      >
-                        Update
-                      </button>
-
-                      <Modal3
-                        toggleModal3={toggleModal3}
-                        isOpen={isOpen}
-                        creatingapi={creatingapi}
-                        setCreatingapi={setCreatingapi}
-                        selectCardId={selectCardId}
-                        close ={close}
-                      ></Modal3>  */}
 
                       <h4 className="role">{obj.Role}</h4>
 
@@ -190,28 +184,21 @@ export default function Jobpage() {
                       <br></br>
                       <p className="date">Apply Before the 27aug </p>
                       <button
-                        onClick={() => toggleModal3(obj._id)}
+                        onClick={() => openButton(obj._id)}
                         class="btn btn-primary"
                       >
                         Update
                       </button>
 
-                      {/* <Modal3
-                        toggleModal3={toggleModal3}
-                        isOpen={isOpen}
-                        creatingapi={creatingapi}
-                        setCreatingapi={setCreatingapi}
-                        selectCardId={selectCardId}
-                        close ={close}
-                      ></Modal3>  */}
                       {issOpen && (
                         <Modal3
-                          toggleModal3={toggleModal3}
+                          openButton={openButton}
                           issOpen={issOpen}
                           selectCardIdUpdate={selectCardIdUpdate}
                           close={close}
-                          updated={updated}
-                          setUpdated={setUpdated}
+
+                          updatedapi={updatedapi}
+                          setUpdatedapi={setUpdatedapi}
                         ></Modal3>
                       )}
                     </div>
