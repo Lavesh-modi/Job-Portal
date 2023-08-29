@@ -118,16 +118,8 @@ export default function Login() {
 // document.cookie = `email=${encodeURIComponent(email)}; expires=${new Date(decoded.exp * 1000)}; path=/`;
 document.cookie = `email=${email}; expires=${new Date(decoded.exp * 1000)}; path=/`;
 
-console.log("Email saved as a cookie:", email);
-
-        
-
-        
-
-
-
-
-        // Navigate to the dashboard
+// console.log("Email saved as a cookie:", email);
+// Navigate to the dashboard
         navigate("/dashboard");
         // window.location.href = "/dashboard";
       } else {
@@ -139,7 +131,7 @@ console.log("Email saved as a cookie:", email);
     }
   };
 
-  // window.location.href = "/dashboard";
+  
 
   return (
     <div className="box">
@@ -244,4 +236,4 @@ console.log("Email saved as a cookie:", email);
       </div>
     </div>
   );
-}
+      }

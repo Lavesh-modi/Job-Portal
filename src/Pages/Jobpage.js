@@ -1,6 +1,7 @@
 import React, { useState, Link, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Navbar from "./Navbar";
 
 import Axios from "axios";
 
@@ -20,14 +21,31 @@ export default function Jobpage() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectCardId, setSelectCardId] = useState();
   const [update, setUpdate] = useState("isOpen");
-  const [creatingapi, setCreatingapi] = useState();
+  const [creatingapi, setCreatingapi] = useState("");
+  const [selectCardIdUpdate, setSelectCardIdUpdate] = useState();
+  const [issOpen, setIssOpen] = useState(false);
+  const [updated, setUpdated] = useState("isOpen");
 
   const [updateapi, setUpdateapi] = useState();
+
   function toggleModal2(buttonid) {
     setSelectCardId(buttonid);
     setIsOpen(!isOpen);
   }
 
+  function toggleModal3(buttonid) {
+    setSelectCardIdUpdate(buttonid);
+
+    // setSelectCardId(buttonid);
+    // setIssOpen(!issOpen);
+    setIssOpen(true);
+  }
+
+  function close() {
+    setIssOpen(!issOpen);
+  }
+
+  console.log(creatingapi, "?????????????");
   Data = Data.slice(0, 10);
 
   const [bdata, setBdata] = useState([]);
@@ -35,15 +53,17 @@ export default function Jobpage() {
   console.log("targe", creatingapi);
 
   useEffect(() => {
-    console.log("Calleed useEffects");
+    // console.log("Calleed useEffects");
     Axios.get("http://localhost:5000/api/v1/getcards")
       .then((res) => setBdata(res.data.data))
       .catch((err) => console.log(err));
-    console.log("harssssssssssssss");
-    console.log("agarwal", updateapi);
+    console.log("rssssssssssssss");
+    console.log(".......", updateapi);
     console.log("updater", creatingapi);
   }, [updateapi, creatingapi]);
   console.log(bdata);
+
+  // console.log(creatingapi,"checking creatapi")
   // console.log(res.bdata);
   // const [currentPage, setCurrentPage] = useState(1);
   // const [PostsPerPage, setPostPage] = useState(8);
@@ -72,13 +92,12 @@ export default function Jobpage() {
 
   return (
     <div>
-      <div className=" header">
+      {/* <Navbar></Navbar> */}
+
+      <div className="nobg">
+        <Navbar></Navbar>
         {/* <div className="row"> */}
-        <div>
-          {/* <div className=" head"> */}
-          <h3 className="h3">Get easily hired </h3>
-          <h6> No. of 100 company</h6>
-        </div>
+
         {/* <img src="https://img.freepik.com/premium-vector/business-people-using-face-mask-searching-work-illustration-design_24877-64136.jpg"  className="img1" ></img> */}
         <h1 className=" text"> JOB PAGE</h1>
         {/* </div> */}
@@ -115,17 +134,31 @@ export default function Jobpage() {
                     ></Modal2>
 
                     <div className="card-body">
-                    {/* <button 
+                      {/* <button 
                     
                     onClick={() => toggleModal2(obj._id)}                   
                     type="button" class="btn btn-info">update</button> */}
-                   <Modal3 creatingapi={creatingapi} setCreatingapi={setCreatingapi} ></Modal3>
-                    
-                    
+
+                      {/* <button
+                        onClick={() => toggleModal3(obj._id)}
+                        class="btn btn-primary"
+                      >
+                        Update
+                      </button>
+
+                      <Modal3
+                        toggleModal3={toggleModal3}
+                        isOpen={isOpen}
+                        creatingapi={creatingapi}
+                        setCreatingapi={setCreatingapi}
+                        selectCardId={selectCardId}
+                        close ={close}
+                      ></Modal3>  */}
+
                       <h4 className="role">{obj.Role}</h4>
-                      
+
                       <img
-                        src= "workos-icon.svg"
+                        src="workos-icon.svg"
                         className="logo"
                         alt="Logo of company"
                       ></img>
@@ -156,6 +189,31 @@ export default function Jobpage() {
 
                       <br></br>
                       <p className="date">Apply Before the 27aug </p>
+                      <button
+                        onClick={() => toggleModal3(obj._id)}
+                        class="btn btn-primary"
+                      >
+                        Update
+                      </button>
+
+                      {/* <Modal3
+                        toggleModal3={toggleModal3}
+                        isOpen={isOpen}
+                        creatingapi={creatingapi}
+                        setCreatingapi={setCreatingapi}
+                        selectCardId={selectCardId}
+                        close ={close}
+                      ></Modal3>  */}
+                      {issOpen && (
+                        <Modal3
+                          toggleModal3={toggleModal3}
+                          issOpen={issOpen}
+                          selectCardIdUpdate={selectCardIdUpdate}
+                          close={close}
+                          updated={updated}
+                          setUpdated={setUpdated}
+                        ></Modal3>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -164,6 +222,8 @@ export default function Jobpage() {
           })}
         </div>
       </div>
+
+      {/* /navigation */}
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">

@@ -219,3 +219,7 @@
   max-height: 300px;
   overflow: auto;
 }
+.nobg .bg-img {
+  background: #9aa1a9;
+  height: auto;
+}

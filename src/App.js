@@ -10,13 +10,17 @@ import Company from "./Pages/Company";
 import SearchFun from "./component/searchFun";
 import ProtectedRoutes from "./component/ProtectedRoutes";
 import Modal2 from "./component/Modal2";
+import Navbar from "./Pages/Navbar";
 // import ProtectedRoutes from "./component/ProtectedRoutes";
 // import Navbar from "./component/navbar";
 
 function App() {
   return (
     <>
+{/* <Navbar>
 
+  
+</Navbar> */}
     {/* <Jobpage></Jobpage> */}
     {/* <SearchFun />
     <Switch>
@@ -27,7 +31,7 @@ function App() {
 
       {/* <Company /> */}
 
-        <Switch>
+     <Switch>
         <Route exact path="/" element={<Login />} />
        
 
@@ -37,7 +41,7 @@ function App() {
         <Route path="/Company/:comp" element={<Company />} />
 
          
-      </Switch>   
+      </Switch>     
 
       {/* <Modal2/> */}
 
@@ -51,9 +55,9 @@ function App() {
   <Route path="/Company" element={<ProtectedRoutes><Company /></ProtectedRoutes>} />
   <Route path="/Company/:comp" element={<ProtectedRoutes><Company /></ProtectedRoutes>} />
 
-  <Route path="/login" element={<Login />} />
-   
-</Switch> */}
+  <Route path="/login" element={<ProtectedRoutes><Dashboard /></ProtectedRoutes> }/>
+    */}
+{/* // </Switch> */}
     </>
   );
 }

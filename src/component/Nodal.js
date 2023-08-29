@@ -140,7 +140,10 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
         // Handle the response here if needed
         console.log("Response:", response.data);
         toggleModal();
-        setCreatingapi(response.data);
+        setCreatingapi(response.data)
+        console.log(setCreatingapi(response.data));
+        
+    // console.log(" setCreatingapi into api ", creatingapi )
         // toggleModal();
       })
       .catch((error) => {

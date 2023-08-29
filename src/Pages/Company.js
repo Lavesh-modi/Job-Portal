@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 // import Axios from axios
 import Jobpagedata from "../component/Jobpagedata.json";
 import Axios from "axios";
+import Footer from "../component/Footer";
+import Navbar from "./Navbar";
 
 export default function Company() {
   const [state, setState] = useState();
@@ -28,7 +30,11 @@ export default function Company() {
   // console.log(">>>>>",data);
 
   return (
-    <div className="container-fluid">
+    
+    <div className="container-fluid nobg">
+    <Navbar
+    ></Navbar>
+    
       <div className="row">
         <div className="col-md-4">
           <div id="sidebar">SIDE BAR</div>
@@ -132,42 +138,12 @@ export default function Company() {
         </div>
       </div>
 
-      <footer>footer </footer>
+      {/* <footer>footer </footer> */}
 
       {/* does not final the footer bcause of the ui left on the dashboard */}
+        {/* <hr></hr>
+      <Footer></Footer> */}
     </div>
 
-    //     <div className=" main ">
-    // <div className=" item1">
-    // <div class="header">
-    //   <img src="img/logo.png" alt="logo" />
-
-    //   <h1>My website name</h1>
-    //   <a href=""   >link</a>
-    // </div>
-    // <br></br>
-    // <div className="texta ">
-    // <section className="texture" >
-    //   <h3>About company</h3>
-    //   <p>company data   </p>
-    // </section>
-    // <section className="texture" >
-    //   <h3>job description</h3>
-    //   <p>description data   </p>
-    // </section>
-    // <section >
-    //   <h6></h6>
-    // </section>
-
-    // </div>
-    // </div>
-    //     </div>
-    // <div>
-    //   <div>
-    //     <img src={data.imgsrc} alt="logo"></img>
-    //     <h3> erjwkewlrgjt</h3>
-    //   </div>
-    //   <h5> </h5>
-    // </div>
-  );
-}
+  )
+    }

@@ -241,7 +241,7 @@ export default function Dashboard() {
           <div className="search-text">Search:</div>
           <input id="search-box" onChange={filterBySearch} />
           <div id="item-list2">
-            <ol>
+            <ol className="m-0">
               {filterList.map(
                 (item, index) => (
                   {
