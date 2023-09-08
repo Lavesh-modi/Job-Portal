@@ -25,9 +25,9 @@ ReactDOM.render(
 //       </Routes>
 //     </BrowserRouter> */}
 
-//     <BrowserRouter>
-//       <App />
-//     </BrowserRouter>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
 //   // </React.StrictMode>
 // );
 

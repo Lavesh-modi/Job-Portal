@@ -223,3 +223,11 @@
   background: #9aa1a9;
   height: auto;
 }
+  
+
+/* error for error component  */
+
+
+.error{
+  color: red;   
+}

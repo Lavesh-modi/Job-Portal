@@ -260,14 +260,23 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
                   <input
                     className=" form-control"
                     name="Name"
-                    placeholder="Name"
+                    placeholder="Company name"
                   ></input>
-                  {/* </div> */}
-                  {/* <div className="col-6">
-              <label className="input-label">Name</label>
-              <input className=" form-control" placeholder="Name"></input>
-            </div> */}
+             
                 </div>
+
+
+                <div className="row p-1">
+                 
+                 <label className="input-label">Email</label>
+                 <input
+                   className=" form-control"
+                   name="EmailC"
+                   placeholder="Company@mail.com"
+                 ></input>
+                 </div>
+                 <br></br>
+            
                 <div class="form-row align-items-center">
                   <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
@@ -298,14 +307,48 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
                         id="exampleFormControlTextarea1"
                         rows="2"
                       ></textarea>
+
                     </div>
+                    <br></br>
+
+                    <label >Location :-</label>
+                    <br></br>
+                    <label>On-Site </label>
+                    <input
+                    name="Location"
+                    type="checkbox"
+                    id="isVisible"
+                    >
+
+                    </input>
+                    <br></br>
+                     <label> Remote </label>
+                    <input
+                    name="Location"
+                    type="checkbox"
+                    id="isVisible"
+                    >
+
+                    </input>
+                    <br></br>
+                     <label>Hybrid </label>
+                    <input
+                    name="Location"
+                    type="checkbox"
+                    id="isVisible"
+                    >
+
+                    </input>
+                    
+                   
+                </div>
 
                     {/* <div class="input-group input-group-lg">
   <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
 </div>*/}
                   </div>
-                </div>
+                
                 <div class="modal-footer">
                   <button
                     type="button"
