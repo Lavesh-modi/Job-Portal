@@ -1,9 +1,9 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import Axios  from "axios";
+import Axios from "axios";
 import Login from "./Pages/Login";
 import Dashboard from "./Pages/Dashboard";
-import { Routes as Switch, Route, Link } from "react-router-dom";
+import { Routes as Switch, Route, Link, Routes } from "react-router-dom";
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Jobpage from "./Pages/Jobpage";
 import Company from "./Pages/Company";
@@ -11,18 +11,20 @@ import SearchFun from "./component/searchFun";
 import ProtectedRoutes from "./component/ProtectedRoutes";
 import Modal2 from "./component/Modal2";
 import Navbar from "./Pages/Navbar";
+import Pratice from "./Pages/Pratice";
 // import ProtectedRoutes from "./component/ProtectedRoutes";
 // import Navbar from "./component/navbar";
 
 function App() {
   return (
     <>
-{/* <Navbar>
+      {/* <Pratice></Pratice> */}
+      {/* <Navbar>
 
   
 </Navbar> */}
-    {/* <Jobpage></Jobpage> */}
-    {/* <SearchFun />
+      {/* <Jobpage></Jobpage> */}
+      {/* <SearchFun />
     <Switch>
     <Route exact path="/" element={<Login />} />
     
@@ -31,7 +33,7 @@ function App() {
 
       {/* <Company /> */}
 
-     <Switch>
+      {/* <Switch>
         <Route exact path="/" element={<Login />} />
        
 
@@ -41,11 +43,53 @@ function App() {
         <Route path="/Company/:comp" element={<Company />} />
 
          
-      </Switch>     
+      </Switch>  */}
+
+      <Routes>
+        {/*       
+      {/* <Route  path="/" element={<Login />} /> */}
+        <Route exact path="/" element={<Login />} />
+
+        <Route path="/" element={<ProtectedRoutes />}>
+          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/Company" element={<Company />} />
+          <Route path="/Jobpage" element={<Jobpage />} />
+          <Route path="/Company" element={<Company />} />
+          <Route path="/Company/:comp" element={<Company />} />
+        </Route>
+        {/* <Route
+          path="/Jobpage"
+          element={
+            <ProtectedRoutes>
+              <Jobpage />
+            </ProtectedRoutes>
+          }
+        /> */}
+        {/* <Route
+          path="/Company"
+          element={
+            <ProtectedRoutes>
+              <Company />
+            </ProtectedRoutes>
+          }
+        /> */}
+        {/* <Route
+          path="/Company/:comp"
+          element={
+            <ProtectedRoutes>
+              <Company />
+            </ProtectedRoutes>
+          }
+        /> */}
+
+        {/* <Route path="/dashboard" element={<Dashboard />} />
+       <Route path="/Jobpage" element={<Jobpage />} />
+       <Route path="/Company" element={<Company />} />
+       <Route path="/Company/:comp" element={<Company />}/>
+       <Route path = "**"  element= {<h3>Not found 404 </h3>}/> */}
+      </Routes>
 
       {/* <Modal2/> */}
-
-
 
       {/* <Switch>
    <Route exact path="/" element={<Login />} />
@@ -56,8 +100,8 @@ function App() {
   <Route path="/Company/:comp" element={<ProtectedRoutes><Company /></ProtectedRoutes>} />
 
   <Route path="/login" element={<ProtectedRoutes><Dashboard /></ProtectedRoutes> }/>
-    */}
-{/* // </Switch> */}
+    
+ </Switch>  */}
     </>
   );
 }
