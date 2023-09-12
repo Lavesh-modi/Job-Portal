@@ -339,6 +339,10 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
                     >
 
                     </input>
+                    <br></br>
+
+                    <input type="file" id="myFile" name="myFile"/>
+  {/* <input type="submit"/> */}
                     
                    
                 </div>

@@ -26,7 +26,7 @@ export default function Jobpage() {
   // const [updated, setUpdated] = useState("isOpen");
 
   const [updateapi, setUpdateapi] = useState();
-  const [updatedapi,setUpdatedapi] = useState();
+  const [updatedapi, setUpdatedapi] = useState();
 
   function toggleModal2(buttonid) {
     setSelectCardId(buttonid);
@@ -57,7 +57,7 @@ export default function Jobpage() {
     console.log("all cards ");
     console.log("updateapi", updateapi);
     console.log("updater", creatingapi);
-  }, [updateapi, creatingapi,updatedapi]);
+  }, [updateapi, creatingapi, updatedapi]);
   // console.log(bdata, "bdata");
 
   // console.log(creatingapi,"checking creatapi")
@@ -152,7 +152,7 @@ export default function Jobpage() {
                       <h4 className="role">{obj.Role}</h4>
 
                       <img
-                        src="workos-icon.svg"
+                        src="../../../Backend2/images/money-heist.jpg"
                         className="logo"
                         alt="Logo of company"
                       ></img>
@@ -196,7 +196,6 @@ export default function Jobpage() {
                           issOpen={issOpen}
                           selectCardIdUpdate={selectCardIdUpdate}
                           close={close}
-
                           updatedapi={updatedapi}
                           setUpdatedapi={setUpdatedapi}
                         ></Modal3>

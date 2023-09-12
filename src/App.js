@@ -14,10 +14,12 @@ import Navbar from "./Pages/Navbar";
 import Pratice from "./Pages/Pratice";
 // import ProtectedRoutes from "./component/ProtectedRoutes";
 // import Navbar from "./component/navbar";
+import Filler from "./component/Filler";
 
 function App() {
   return (
     <>
+      
       {/* <Pratice></Pratice> */}
       {/* <Navbar>
 
@@ -46,9 +48,9 @@ function App() {
       </Switch>  */}
 
       <Routes>
-        {/*       
-      {/* <Route  path="/" element={<Login />} /> */}
-        <Route exact path="/" element={<Login />} />
+      {/*       
+      {/*2 <Route  path="/" element={<Login />} /> */}
+      <Route exact path="/" element={<Login />} />
 
         <Route path="/" element={<ProtectedRoutes />}>
           <Route exact path="/dashboard" element={<Dashboard />} />
@@ -56,8 +58,8 @@ function App() {
           <Route path="/Jobpage" element={<Jobpage />} />
           <Route path="/Company" element={<Company />} />
           <Route path="/Company/:comp" element={<Company />} />
-        </Route>
-        {/* <Route
+        </Route> 2
+      {/* <Route
           path="/Jobpage"
           element={
             <ProtectedRoutes>
@@ -65,7 +67,7 @@ function App() {
             </ProtectedRoutes>
           }
         /> */}
-        {/* <Route
+      {/* <Route
           path="/Company"
           element={
             <ProtectedRoutes>
@@ -73,7 +75,7 @@ function App() {
             </ProtectedRoutes>
           }
         /> */}
-        {/* <Route
+      {/* <Route
           path="/Company/:comp"
           element={
             <ProtectedRoutes>
@@ -82,12 +84,12 @@ function App() {
           }
         /> */}
 
-        {/* <Route path="/dashboard" element={<Dashboard />} />
+      {/* <Route path="/dashboard" element={<Dashboard />} />
        <Route path="/Jobpage" element={<Jobpage />} />
        <Route path="/Company" element={<Company />} />
        <Route path="/Company/:comp" element={<Company />}/>
        <Route path = "**"  element= {<h3>Not found 404 </h3>}/> */}
-      </Routes>
+      </Routes>  
 
       {/* <Modal2/> */}
 
