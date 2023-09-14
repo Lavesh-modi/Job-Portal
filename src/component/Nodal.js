@@ -84,7 +84,7 @@
 
 // export default Modal;
 // }
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Modal from "react-modal";
 
 import Axios from "axios";
@@ -108,11 +108,41 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
   // }, []);
   // const [stData,setstData] = useState(Name,Role)
   const [isOpen, setIsOpen] = useState(false);
+
+  const [file, setFile] = useState();
+  const [formData, setFormData] = useState(new FormData());
   // const [updater,setUpdater] = useState("!isOpen")
 
   function toggleModal() {
     setIsOpen(!isOpen);
   }
+
+
+  useEffect(() => {
+
+    console.log("useffect calling ")
+    
+    if (file) {
+      const updatedFormData = new FormData();
+      updatedFormData.append('file', file);  
+      console.log(file,"useffect file")
+      
+      setFormData(updatedFormData);
+    }
+  }, [file]);
+
+  function handleChange(e) {
+    console.log(e.target.files[0].name,"console for state");
+    setFile(e.target.files[0])
+    
+    
+
+  }
+
+
+  console.log(file,"state of fil4444 e")
+
+  
 
   // const[updating,setUpdating] = useState("toggleModal")
   const handlesubmit = (e) => {
@@ -126,11 +156,16 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     // console.log("Company Name  :" + Name, "\n", "ROLE  :" + Role);
     // console.log("ggggg", Role);
     const About = e.target.exampleFormControlTextarea1.value;
+    const upload = formData;
+    console.log(upload,'uploadss')
+
+    console.log(formData, "myFikessss");
 
     const requestData = {
       name: Name,
       Role: Role,
       About: About,
+      Image: upload,
     };
     // setUpdating(requestData)
     console.log("kkkkkkk", requestData);
@@ -140,10 +175,10 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
         // Handle the response here if needed
         console.log("Response: for createCards", response.data);
         toggleModal();
-        setCreatingapi(response.data)
+        setCreatingapi(response.data);
         // console.log(setCreatingapi(response.data));
-        
-    // console.log(" setCreatingapi into api ", creatingapi )
+
+        // console.log(" setCreatingapi into api ", creatingapi )
         // toggleModal();
       })
       .catch((error) => {
@@ -219,6 +254,20 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     // link.download = `${"check"}.json`;
     // link.href = url;
     // link.click();
+
+    //   const fileInput = document.getElementById('myFile');
+
+    // fileInput.addEventListener('change', () => {
+    //   console.log(fileInput, 'myyyyyyyyy');
+    // });
+
+    // const [file, setFile] = useState();
+    // function handleChange(e) {
+    //     console.log(e.target.files);
+    //     setFile(URL.createObjectURL(e.target.files[0]));
+    // }
+
+   
   };
 
   return (
@@ -262,21 +311,18 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
                     name="Name"
                     placeholder="Company name"
                   ></input>
-             
                 </div>
 
-
                 <div className="row p-1">
-                 
-                 <label className="input-label">Email</label>
-                 <input
-                   className=" form-control"
-                   name="EmailC"
-                   placeholder="Company@mail.com"
-                 ></input>
-                 </div>
-                 <br></br>
-            
+                  <label className="input-label">Email</label>
+                  <input
+                    className=" form-control"
+                    name="EmailC"
+                    placeholder="Company@mail.com"
+                  ></input>
+                </div>
+                <br></br>
+
                 <div class="form-row align-items-center">
                   <div class="col-auto my-1">
                     <label class="mr-sm-2" for="inlineFormCustomSelect">
@@ -307,52 +353,50 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
                         id="exampleFormControlTextarea1"
                         rows="2"
                       ></textarea>
-
                     </div>
                     <br></br>
 
-                    <label >Location :-</label>
+                    <label>Location :-</label>
                     <br></br>
                     <label>On-Site </label>
                     <input
-                    name="Location"
-                    type="checkbox"
-                    id="isVisible"
-                    >
-
-                    </input>
+                      name="Location"
+                      type="checkbox"
+                      id="isVisible"
+                    ></input>
                     <br></br>
-                     <label> Remote </label>
+                    <label> Remote </label>
                     <input
-                    name="Location"
-                    type="checkbox"
-                    id="isVisible"
-                    >
-
-                    </input>
+                      name="Location"
+                      type="checkbox"
+                      id="isVisible"
+                    ></input>
                     <br></br>
-                     <label>Hybrid </label>
+                    <label>Hybrid </label>
                     <input
-                    name="Location"
-                    type="checkbox"
-                    id="isVisible"
-                    >
-
-                    </input>
+                      name="Location"
+                      type="checkbox"
+                      id="isVisible"
+                    ></input>
                     <br></br>
 
-                    <input type="file" id="myFile" name="myFile"/>
-  {/* <input type="submit"/> */}
+                    <input
+                      type="file"
+                      id="myFile"
+                      name="myFile"
+                      onChange={handleChange}
+                    />
                     
-                   
-                </div>
 
-                    {/* <div class="input-group input-group-lg">
+                    {/* <input type="submit"/> */}
+                  </div>
+
+                  {/* <div class="input-group input-group-lg">
   <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
   <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
 </div>*/}
-                  </div>
-                
+                </div>
+
                 <div class="modal-footer">
                   <button
                     type="button"
