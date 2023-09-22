@@ -9,6 +9,7 @@ import Data from "../component/Jobpagedata.json";
 // import { useHistory } from 'react-router-dom';
 import Card from "../component/Card";
 import Footer from "../component/Footer";
+import useIdle from "../component/useIdle";
 // import SearchFun from "./component/searchFun";
 
 export default function Dashboard() {
@@ -16,13 +17,19 @@ export default function Dashboard() {
   const [data, setData] = useState([]);
 
   const [cookies, setCookie, removeCookie] = useCookies();
+<<<<<<< Updated upstream
 
 // useEffect(()=>{
 //   console.log("useffect start");
   
 // })
+=======
+>>>>>>> Stashed changes
 
+  // useEffect(()=>{
+  //   console.log("useffect start");
 
+  // })
 
   useEffect(() => {
     const localStorageData = localStorage.getItem("companyData");
@@ -59,14 +66,20 @@ export default function Dashboard() {
     // localStorage.clear("email");
     // localStorage.clear("password");
     // sessionStorage.clear();
+<<<<<<< Updated upstream
 
     removeCookie("email");
+=======
+    console.log("User got logged out");
+    removeCookie("userid");
+>>>>>>> Stashed changes
     // Axios.get("http://localhost:5000/api/v1/deleteCookies")
-
-
 
     navigate("/");
   }
+
+
+  const {isIdle} = useIdle({onIdle: Onlogout, idleTime: 0.25})
   return (
     <div className="bg-img  texter">
       <nav className="navbar navbar-expand-lg bg-transparent bg-light.bg-gradient">
@@ -141,6 +154,10 @@ export default function Dashboard() {
                 <a className="nav-link active">Link</a>
               </li>
             </ul>
+              <div>
+
+            {isIdle ? <h1>You were Logged out</h1>: <h1>You are Still active</h1>}
+            </div>
 
             {/* <form className="d-flex" role="search">
               <input

@@ -117,6 +117,7 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     setIsOpen(!isOpen);
   }
 
+<<<<<<< Updated upstream
 
   useEffect(() => {
 
@@ -130,6 +131,20 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
       setFormData(updatedFormData);
     }
   }, [file]);
+=======
+  function handleChange(e) {
+    setFile(e.target.files[0].name);
+  }
+
+  console.log(file, "console file ");
+  // useEffect(() => {
+  //   if (file) {
+  //     var formData = new FormData();
+  //     formData.append("file", file);
+  //     setFormDataa(formData);
+  //   }
+  // }, [file]);
+>>>>>>> Stashed changes
 
   function handleChange(e) {
     console.log(e.target.files[0].name,"console for state");
@@ -151,26 +166,56 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     // console.log("the name is");
 
     const Name = e.target.Name.value;
+
+    console.log("The name", Name);
     // console.log(">>>>", Name);
     const Role = e.target.inlineFormCustomSelect.value;
+    console.log("The name", Role);
+
     // console.log("Company Name  :" + Name, "\n", "ROLE  :" + Role);
     // console.log("ggggg", Role);
     const About = e.target.exampleFormControlTextarea1.value;
+<<<<<<< Updated upstream
     const upload = formData;
     console.log(upload,'uploadss')
+=======
+    console.log("The name", About);
+
+    // const upload = formData;
+    // console.log(upload, "uploadss");
+>>>>>>> Stashed changes
 
     console.log(formData, "myFikessss");
 
+<<<<<<< Updated upstream
     const requestData = {
       name: Name,
       Role: Role,
       About: About,
       Image: upload,
     };
-    // setUpdating(requestData)
-    console.log("kkkkkkk", requestData);
+=======
+    const backendForm = new FormData();
 
-    Axios.post("http://localhost:5000/api/v1/createCards", requestData)
+    backendForm.append("file", file);
+    backendForm.append("name", Name);
+    backendForm.append("role", Role);
+    backendForm.append("about", About);
+    // const requestData = {
+    //   name: Name,
+    //   Role: Role,
+    //   About: About,
+    //   Image: formDataa,
+    // };
+>>>>>>> Stashed changes
+    // setUpdating(requestData)
+    console.log("backendForm", backendForm);
+
+    const config = {
+      headers: { "content-type": "multipart/form-data" },
+    };
+
+    Axios.post("http://localhost:5000/api/v1/createCards", backendForm, config)
       .then((response) => {
         // Handle the response here if needed
         console.log("Response: for createCards", response.data);
@@ -186,8 +231,29 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
         console.error("Error:", error);
       });
 
-    console.log(requestData);
+    // console.log(requestData);
 
+<<<<<<< Updated upstream
+=======
+    // const Image = formDataa;
+
+    // Axios.post("http://localhost:5000/api/v1/createCards", Image)
+    //   .then((response) => {
+    //     // Handle the response here if needed
+    //     console.log("Response: for createCards", response.data);
+    //     toggleModal();
+    //     setCreatingapi(response.data);
+    //     // console.log(setCreatingapi(response.data));
+
+    //     // console.log(" setCreatingapi into api ", creatingapi )
+    //     // toggleModal();
+    //   })
+    //   .catch((error) => {
+    //     // Handle errors here
+    //     console.error("Error:", error);
+    //   });
+    // console.log(Image, "FormData Api");
+>>>>>>> Stashed changes
     // setUpdating(requestData)
 
     // localStorage.setItem("Company Name :", JSON.stringify(Name))

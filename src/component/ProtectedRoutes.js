@@ -20,7 +20,7 @@ import React from "react";
 import { Navigate, Outlet, Route } from "react-router-dom";
 
 const useAuth = () => {
-  const userEmail = getCookie("email");
+  const userEmail = getCookie("userid");
   // const userPassword = getCookie('password');
 
   // return !!userEmail && !!userPassword;
