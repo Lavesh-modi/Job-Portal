@@ -17,14 +17,11 @@ export default function Dashboard() {
   const [data, setData] = useState([]);
 
   const [cookies, setCookie, removeCookie] = useCookies();
-<<<<<<< Updated upstream
 
 // useEffect(()=>{
 //   console.log("useffect start");
   
 // })
-=======
->>>>>>> Stashed changes
 
   // useEffect(()=>{
   //   console.log("useffect start");
@@ -66,13 +63,8 @@ export default function Dashboard() {
     // localStorage.clear("email");
     // localStorage.clear("password");
     // sessionStorage.clear();
-<<<<<<< Updated upstream
-
-    removeCookie("email");
-=======
     console.log("User got logged out");
     removeCookie("userid");
->>>>>>> Stashed changes
     // Axios.get("http://localhost:5000/api/v1/deleteCookies")
 
     navigate("/");

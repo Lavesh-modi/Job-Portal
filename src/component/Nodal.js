@@ -84,7 +84,7 @@
 
 // export default Modal;
 // }
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 
 import Axios from "axios";
@@ -109,42 +109,23 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
   // const [stData,setstData] = useState(Name,Role)
   const [isOpen, setIsOpen] = useState(false);
 
-  const [file, setFile] = useState();
-  const [formData, setFormData] = useState(new FormData());
+  const [file, setFile] = useState(null);
+  const [formDataa, setFormDataa] = useState();
+  
   // const [updater,setUpdater] = useState("!isOpen")
 
   function toggleModal() {
     setIsOpen(!isOpen);
   }
 
-<<<<<<< Updated upstream
 
   useEffect(() => {
-
-    console.log("useffect calling ")
-    
     if (file) {
-      const updatedFormData = new FormData();
-      updatedFormData.append('file', file);  
-      console.log(file,"useffect file")
-      
-      setFormData(updatedFormData);
+      var formData = new FormData();
+      formData.append("file", file);
+      setFormDataa(formData);
     }
   }, [file]);
-=======
-  function handleChange(e) {
-    setFile(e.target.files[0].name);
-  }
-
-  console.log(file, "console file ");
-  // useEffect(() => {
-  //   if (file) {
-  //     var formData = new FormData();
-  //     formData.append("file", file);
-  //     setFormDataa(formData);
-  //   }
-  // }, [file]);
->>>>>>> Stashed changes
 
   function handleChange(e) {
     console.log(e.target.files[0].name,"console for state");
@@ -175,47 +156,25 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     // console.log("Company Name  :" + Name, "\n", "ROLE  :" + Role);
     // console.log("ggggg", Role);
     const About = e.target.exampleFormControlTextarea1.value;
-<<<<<<< Updated upstream
-    const upload = formData;
+    const upload = formDataa;
     console.log(upload,'uploadss')
-=======
-    console.log("The name", About);
 
-    // const upload = formData;
-    // console.log(upload, "uploadss");
->>>>>>> Stashed changes
+    // console.log(formData, "myFikessss");
 
-    console.log(formData, "myFikessss");
-
-<<<<<<< Updated upstream
     const requestData = {
       name: Name,
       Role: Role,
       About: About,
-      Image: upload,
+      // Image: formData,
     };
-=======
-    const backendForm = new FormData();
-
-    backendForm.append("file", file);
-    backendForm.append("name", Name);
-    backendForm.append("role", Role);
-    backendForm.append("about", About);
-    // const requestData = {
-    //   name: Name,
-    //   Role: Role,
-    //   About: About,
-    //   Image: formDataa,
-    // };
->>>>>>> Stashed changes
     // setUpdating(requestData)
-    console.log("backendForm", backendForm);
+    console.log("requestData", requestData);
 
     const config = {
       headers: { "content-type": "multipart/form-data" },
     };
 
-    Axios.post("http://localhost:5000/api/v1/createCards", backendForm, config)
+    Axios.post("http://localhost:5000/api/v1/createCards", requestData, config)
       .then((response) => {
         // Handle the response here if needed
         console.log("Response: for createCards", response.data);
@@ -233,27 +192,6 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
 
     // console.log(requestData);
 
-<<<<<<< Updated upstream
-=======
-    // const Image = formDataa;
-
-    // Axios.post("http://localhost:5000/api/v1/createCards", Image)
-    //   .then((response) => {
-    //     // Handle the response here if needed
-    //     console.log("Response: for createCards", response.data);
-    //     toggleModal();
-    //     setCreatingapi(response.data);
-    //     // console.log(setCreatingapi(response.data));
-
-    //     // console.log(" setCreatingapi into api ", creatingapi )
-    //     // toggleModal();
-    //   })
-    //   .catch((error) => {
-    //     // Handle errors here
-    //     console.error("Error:", error);
-    //   });
-    // console.log(Image, "FormData Api");
->>>>>>> Stashed changes
     // setUpdating(requestData)
 
     // localStorage.setItem("Company Name :", JSON.stringify(Name))
@@ -332,8 +270,6 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     //     console.log(e.target.files);
     //     setFile(URL.createObjectURL(e.target.files[0]));
     // }
-
-   
   };
 
   return (
@@ -452,7 +388,6 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
                       name="myFile"
                       onChange={handleChange}
                     />
-                    
 
                     {/* <input type="submit"/> */}
                   </div>

@@ -58,7 +58,7 @@ export default function Jobpage() {
     console.log("updateapi", updateapi);
     console.log("updater", creatingapi);
   }, [updateapi, creatingapi, updatedapi]);
-  // console.log(bdata, "bdata");
+  console.log(bdata, "bdata");
 
   // console.log(creatingapi,"checking creatapi")
   // console.log(res.bdata);
@@ -118,7 +118,7 @@ export default function Jobpage() {
         <div className="row">
           {bdata.map((obj) => {
             return (
-              console.log(obj, "check"),
+              console.log(obj, "checking the obj "),
               (
                 <div className="col-md-3">
                   <div className="card bg-dark text-white mb-4">
@@ -210,7 +210,7 @@ export default function Jobpage() {
       </div>
 
       {/* /navigation */}
-      <nav aria-label="Page navigation example">
+{ bdata > 10 &&    (  <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item">
             <a class="page-link" href="#" aria-label="Previous">
@@ -281,6 +281,7 @@ export default function Jobpage() {
   </div>
 </div> */}
       </nav>
+      )}
     </div>
     // </div>
   );
