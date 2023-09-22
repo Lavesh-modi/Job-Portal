@@ -15,7 +15,7 @@ export default function Dashboard() {
   const [filterList, setFilterList] = useState([]);
   const [data, setData] = useState([]);
 
-  const [cookies, setCookie, removeCookie] = useCookies();
+  // const [cookies, setCookie, removeCookie] = useCookies();
 
 // useEffect(()=>{
 //   console.log("useffect start");
@@ -60,7 +60,7 @@ export default function Dashboard() {
     // localStorage.clear("password");
     // sessionStorage.clear();
 
-    removeCookie("email");
+    // removeCookie("email");
     // Axios.get("http://localhost:5000/api/v1/deleteCookies")
 
 
