@@ -111,13 +111,12 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
 
   const [file, setFile] = useState(null);
   const [formDataa, setFormDataa] = useState();
-  
+
   // const [updater,setUpdater] = useState("!isOpen")
 
   function toggleModal() {
     setIsOpen(!isOpen);
   }
-
 
   useEffect(() => {
     if (file) {
@@ -128,17 +127,11 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
   }, [file]);
 
   function handleChange(e) {
-    console.log(e.target.files[0].name,"console for state");
-    setFile(e.target.files[0])
-    
-    
-
+    console.log(e.target.files[0].name, "console for state");
+    setFile(e.target.files[0]);
   }
 
-
-  console.log(file,"state of fil4444 e")
-
-  
+  console.log(file, "state of fil4444 e");
 
   // const[updating,setUpdating] = useState("toggleModal")
   const handlesubmit = (e) => {
@@ -157,7 +150,7 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     // console.log("ggggg", Role);
     const About = e.target.exampleFormControlTextarea1.value;
     const upload = formDataa;
-    console.log(upload,'uploadss')
+    console.log(upload, "uploadss");
 
     // console.log(formData, "myFikessss");
 
@@ -171,7 +164,10 @@ export default function Nodal({ creatingapi, setCreatingapi }) {
     console.log("requestData", requestData);
 
     const config = {
-      headers: { "content-type": "multipart/form-data" },
+      headers: {
+        "content-type": "multipart/form-data",
+        Authorization: `Bearer ${document.cookie}`,
+      },
     };
 
     Axios.post("http://localhost:5000/api/v1/createCards", requestData, config)

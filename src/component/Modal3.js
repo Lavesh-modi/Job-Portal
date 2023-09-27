@@ -55,9 +55,17 @@ export default function Modal3({
     };
     console.log("updatedData", many);
 
+    const config = {
+      headers: {
+        "content-type": "multipart/form-data",
+        Authorization: `Bearer ${document.cookie}`,
+      },
+    };
+
+
     Axios.put(
       `http://localhost:5000/api/v1/updateCards/${selectCardIdUpdate}`,
-      updatedData
+      updatedData,config
     )
       .then((response) => {
         console.log("Update successful:", response.data);

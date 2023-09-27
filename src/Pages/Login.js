@@ -1,11 +1,12 @@
-import React from "react";
-import { useState } from "react";
-import * as Yup from "yup";
+import React from "react"; // from the react modules
+import { useState } from "react"; //from the react modules
+import * as Yup from "yup"; // from the yup module
 import jwt_decode from "jwt-decode";
 // import { useEffect } from "react";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { useCookies } from "react-cookie";
+import { Cookies, useCookies } from "react-cookie";
+
 // import { Link, useNavigate } from " react-router-dom";
 // import { BrowserRouter as Router } from "react-router-dom";
 
@@ -102,17 +103,25 @@ export default function Login() {
       // });
 
       // const navigate = useNavigate();
+      const tok = document.cookie;
+      console.log(tok, "tok");
 
       const response = await Axios.post(
-        "http://localhost:5000/api/v1/createLogin",
+        "http://localhost:5000/api/v1/createLogin", // here api were hit and we api and we are entered email in to and check for it
         {
           email: enteredEmail,
           password: enteredPassword,
+        },
+
+        {
+          headers: {
+            Authorization: `Bearer ${ document.cookie}`, // Include the token in the Authorization header
+          },
         }
       );
 
       if (response.data.exists) {
-        const token = response.data.token;
+        const token = response.data.token; // token were accesss from
         console.log(token, "tokken");
 
         console.log("Login successful!");
@@ -120,9 +129,10 @@ export default function Login() {
         setEmailExists(true);
 
         var tokken = token;
+
         // document.cookie =  tokken
 
-        setCookie("userid", tokken, { path: "/" });
+        setCookie("token", tokken, { path: "/" });
 
         //         var token =
         //           "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGRmMGVkYzg1NGVmYTVlOGViY2U0NjUiLCJlbWFpbCI6ImxhdmVzaGVkdUBnbWFpbC5jb20iLCJpYXQiOjE2OTI3ODUzOTcsImV4cCI6MTY5Mjc4ODk5N30.O-PHtBpbp1xtwzrmY6IyJ-NPyQl0D91XVVLMfZ-LG3s";

@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Axios from "axios";
 
-import { useCookies } from "react-cookie";
+import { Cookies, useCookies } from "react-cookie";
 // import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Data from "../component/Jobpagedata.json";
@@ -16,7 +16,7 @@ export default function Dashboard() {
   const [filterList, setFilterList] = useState([]);
   const [data, setData] = useState([]);
 
-  const [cookies, setCookie, removeCookie] = useCookies();
+  const [cookies, setCookie, removeCookie] = useCookies(["token"]);
 
 // useEffect(()=>{
 //   console.log("useffect start");
@@ -64,7 +64,8 @@ export default function Dashboard() {
     // localStorage.clear("password");
     // sessionStorage.clear();
     console.log("User got logged out");
-    removeCookie("userid");
+    removeCookie("token");
+    // cookies.remove("token");
     // Axios.get("http://localhost:5000/api/v1/deleteCookies")
 
     navigate("/");
