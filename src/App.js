@@ -20,8 +20,23 @@ import Registration from "./Pages/Registration";
 function App() {
   return (
     <>
-    <Registration></Registration>
-      
+      {/* <Registration></Registration> */}
+
+      <Routes>
+        {/*       
+      {/*2 <Route  path="/" element={<Login />} /> */}
+        <Route exact path="/" element={<Login />} />
+
+        <Route path="/" element={<ProtectedRoutes />}>
+          <Route exact path="/registration" element={<Registration/>} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/Company" element={<Company />} />
+          <Route path="/Jobpage" element={<Jobpage />} />
+          <Route path="/Company" element={<Company />} />
+          <Route path="/Company/:comp" element={<Company />} />
+        </Route>
+      </Routes>
+
       {/* <Pratice></Pratice> */}
       {/* <Navbar>
 
@@ -50,8 +65,8 @@ function App() {
       </Switch>  */}
 
       {/* <Routes> */}
-      {/*       
-      {/*2 <Route  path="/" element={<Login />} /> */}
+      {/*             
+      {/* 2 <Route  path="/" element={<Login />} /> */}
       {/* <Route exact path="/" element={<Login />} />
 
         <Route path="/" element={<ProtectedRoutes />}>

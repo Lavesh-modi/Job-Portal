@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Axios from "axios";
-
+import { useNavigate } from "react-router-dom";
 import { Col, Button, Row, Container, Card, Form } from "react-bootstrap";
 
 export default function Registration() {
@@ -19,6 +19,7 @@ function changeHandler  (event){
 }
 
 ;
+ const  navigate = useNavigate();
   const handleSubmit = (event) => {
     // console.log("sunbmit form ");
     event.preventDefault();
@@ -32,7 +33,8 @@ function changeHandler  (event){
   .catch((error)=>{
     console.log(error,"error of admin")
   })
-
+  
+   navigate("/dashboard")
   };
 
   
@@ -49,7 +51,7 @@ function changeHandler  (event){
               <Card.Body>
                 <div className="mb-3 mt-md-4">
                   <h2 className="fw-bold mb-2 text-center text-uppercase ">
-                    Logo
+                    Welcome
                   </h2>
                   <div className="mb-3">
                     <Form onSubmit={handleSubmit}>
@@ -99,7 +101,7 @@ function changeHandler  (event){
                     <div className="mt-3">
                       <p className="mb-0  text-center">
                         Already have an account??{" "}
-                        <a href="{''}" className="text-primary fw-bold">
+                        <a href="/" className="text-primary fw-bold">
                           Sign In
                         </a>
                       </p>

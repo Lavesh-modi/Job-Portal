@@ -6,6 +6,7 @@ import jwt_decode from "jwt-decode";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Cookies, useCookies } from "react-cookie";
+import Registration from "./Registration";
 
 // import { Link, useNavigate } from " react-router-dom";
 // import { BrowserRouter as Router } from "react-router-dom";
@@ -268,7 +269,7 @@ export default function Login() {
               {/* <!-- Register buttons --> */}
               <div className="text-center">
                 <p>
-                  Not a member? <a href="#!">Register</a>
+                  Not a member? <a href="/registration"  >Register</a>
                 </p>
                 <p>or sign up with:</p>
                 <button
