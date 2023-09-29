@@ -18,10 +18,10 @@ export default function Dashboard() {
 
   const [cookies, setCookie, removeCookie] = useCookies(["token"]);
 
-// useEffect(()=>{
-//   console.log("useffect start");
-  
-// })
+  // useEffect(()=>{
+  //   console.log("useffect start");
+
+  // })
 
   // useEffect(()=>{
   //   console.log("useffect start");
@@ -58,6 +58,8 @@ export default function Dashboard() {
     }
   };
 
+  // var popover = new bootstrap.Popover(document.querySelector('#myButton'), options)
+
   const navigate = useNavigate();
   function Onlogout() {
     // localStorage.clear("email");
@@ -71,8 +73,7 @@ export default function Dashboard() {
     navigate("/");
   }
 
-
-  const {isIdle} = useIdle({onIdle: Onlogout, idleTime: 0.25})
+  const { isIdle } = useIdle({ onIdle: Onlogout, idleTime: 0.25 });
   return (
     <div className="bg-img  texter">
       <nav className="navbar navbar-expand-lg bg-transparent bg-light.bg-gradient">
@@ -147,9 +148,12 @@ export default function Dashboard() {
                 <a className="nav-link active">Link</a>
               </li>
             </ul>
-              <div>
-
-            {isIdle ? <h1>You were Logged out</h1>: <h1>You are Still active</h1>}
+            <div>
+              {isIdle ? (
+                <h1>You were Logged out</h1>
+              ) : (
+                <h1>You are Still active</h1>
+              )}
             </div>
 
             {/* <form className="d-flex" role="search">
@@ -164,8 +168,19 @@ export default function Dashboard() {
             <button type="submit" onClick={Onlogout} class="btn btn-info">
               Logout
             </button>
-            <button type="button" class="btn btn-warning">
+            {/* <button type="button" class="btn btn-warning">
               Account
+            </button> */}
+
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="right"
+              data-bs-content="Right popover"
+            >
+              Popover on right
             </button>
           </div>
         </div>

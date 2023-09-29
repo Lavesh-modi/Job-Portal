@@ -15,10 +15,12 @@ import Pratice from "./Pages/Pratice";
 // import ProtectedRoutes from "./component/ProtectedRoutes";
 // import Navbar from "./component/navbar";
 import Filler from "./component/Filler";
+import Registration from "./Pages/Registration";
 
 function App() {
   return (
     <>
+    <Registration></Registration>
       
       {/* <Pratice></Pratice> */}
       {/* <Navbar>
@@ -47,10 +49,10 @@ function App() {
          
       </Switch>  */}
 
-      <Routes>
+      {/* <Routes> */}
       {/*       
       {/*2 <Route  path="/" element={<Login />} /> */}
-      <Route exact path="/" element={<Login />} />
+      {/* <Route exact path="/" element={<Login />} />
 
         <Route path="/" element={<ProtectedRoutes />}>
           <Route exact path="/dashboard" element={<Dashboard />} />
@@ -58,7 +60,7 @@ function App() {
           <Route path="/Jobpage" element={<Jobpage />} />
           <Route path="/Company" element={<Company />} />
           <Route path="/Company/:comp" element={<Company />} />
-        </Route> 2
+        </Route> 2 */}
       {/* <Route
           path="/Jobpage"
           element={
@@ -89,7 +91,7 @@ function App() {
        <Route path="/Company" element={<Company />} />
        <Route path="/Company/:comp" element={<Company />}/>
        <Route path = "**"  element= {<h3>Not found 404 </h3>}/> */}
-      </Routes>  
+      {/* </Routes>   */}
 
       {/* <Modal2/> */}
 

@@ -159,6 +159,7 @@ export default function Jobpage() {
                       <h3 className="card-title "> {obj.name}</h3>
 
                       <br></br>
+                      
                       <FontAwesomeIcon icon={faSuitcaseRolling} />
                       {/* <span>
                         {obj.icon1} {"  "}{" "}
