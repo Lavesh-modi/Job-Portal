@@ -34,7 +34,7 @@ function changeHandler  (event){
     console.log(error,"error of admin")
   })
   
-   navigate("/dashboard")
+   navigate("/")
   };
 
   

@@ -1,6 +1,7 @@
 import React, { useState, Link, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { CiEdit } from "react-icons/ci";
 import Navbar from "./Navbar";
 
 import Axios from "axios";
@@ -116,11 +117,11 @@ export default function Jobpage() {
             return (
               console.log(obj, "checking the obj "),
               (
-                <div className="col-md-4">
+                <div className="col-md-6 col-lg-6  col-xl-4 ">
                   <div className="card bg-dark text-white mb-4 ">
                     <button
                       onClick={() => toggleModal2(obj._id)}
-                      class="btn-close btn-close-white cross , cardfull "
+                      class="btn-close btn-close-white cross  "
                       // aria-label="Close"
                       style={{
                         padding: "5px",
@@ -159,22 +160,32 @@ export default function Jobpage() {
                           <div className="card-title "> {obj.name}</div>
 
                           <div className="iconstyle">
+                          <div>
                             <FontAwesomeIcon icon={faSuitcaseRolling} />
-                            <p>5+year</p>
-
+                            <span>
+                            {"  5+year"}
+                            </span>
+                            
+                            </div>
+                            <div>
                             <FontAwesomeIcon icon={faLocationCrosshairs} />
                             <span>
                               {obj.icon2}
-                              {"Mumbai"}
+                              {" Mumbai"}
                             </span>
+                            </div>
+                              <div>
+
                             <FontAwesomeIcon icon={faWallet} />
-                            <span>{obj.icon3} </span>
+                            <span>{obj.icon3} 
+                            {" As per..."}
+                            </span>
+                            
+                            </div>
                           </div>
                         </div>
                       </div>
                       <div className="buttonpara">
-                       
-
                         <div className="lastdate">Apply Before the 27</div>
                         <button
                           type="submit"
@@ -186,13 +197,15 @@ export default function Jobpage() {
                           Apply
                         </button>
                       </div>
+
+                      {/* button work */}
                       {/* <button
                         onClick={() => openButton(obj._id)}
-                        class="btn btn-primary"
+                        class="btn btn-light"
                       >
-                        Update
+                        <CiEdit />
                       </button> */}
-                      {/* update button  */}
+
                       {issOpen && (
                         <Modal3
                           openButton={openButton}

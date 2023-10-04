@@ -26,9 +26,10 @@ function App() {
         {/*       
       {/*2 <Route  path="/" element={<Login />} /> */}
         <Route exact path="/" element={<Login />} />
+        <Route exact path="/registration" element={<Registration/>} />
 
         <Route path="/" element={<ProtectedRoutes />}>
-          <Route exact path="/registration" element={<Registration/>} />
+          
           <Route exact path="/dashboard" element={<Dashboard />} />
           <Route exact path="/Company" element={<Company />} />
           <Route path="/Jobpage" element={<Jobpage />} />
