@@ -1,8 +1,6 @@
 .App {
   text-align: center;
 }
-* {
-}
 
 .App-logo {
   height: 40vmin;
@@ -84,17 +82,9 @@
   background-color: aqua;
 }
 .logo {
-  width: 30px;
-  height: 31px;
+  width: 45px;
+  height: 47px;
 }
-/* .row {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-.row {
-  display: block;
-} */
 
 .head {
   padding: 30px;
@@ -223,11 +213,103 @@
   background: #9aa1a9;
   height: auto;
 }
-  
 
 /* error for error component  */
 
+.error {
+  color: red;
+}
 
-.error{
-  color: red;   
+/* now we are styling job page  */
+/* .card-body{
+  display: flex;
+} */
+/* .role {
+  font-size: 1.5vw;
+} */
+
+.card-imgg {
+  padding-right: 12px;
+  /* display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column; */
+}
+
+.texted {
+  margin-left: 15px;
+}
+.cardfull {
+  /* 
+    border-radius: 8px;
+    height: 248px;
+    width: 100%;
+    max-width: 416px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding: 16px; */
+}
+.card-body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.card-teximgg {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 10px;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.role {
+
+  white-space: nowrap; 
+  width: 105px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--heading-color);
+  padding-bottom: 8px;
+  font-family: var(--gfg-font-secondary) !important;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--text-color);
+  padding-bottom: 16px;
+}
+.iconstyle {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--meta-text-color);
+}
+
+.buttonpara {
+  border-top: 0.6px solid #cfd0d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+}
+
+.lastdate {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--meta-text-color);
 }

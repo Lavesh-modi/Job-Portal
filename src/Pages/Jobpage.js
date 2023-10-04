@@ -106,10 +106,6 @@ export default function Jobpage() {
 
         {/* <img src="https://img.freepik.com/premium-vector/business-people-using-face-mask-searching-work-illustration-design_24877-64136.jpg"  className="img1" ></img> */}
         <h1 className=" text"> JOB PAGE</h1>
-        {/* </div> */}
-        {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button> */}
 
         <Nodal creatingapi={creatingapi} setCreatingapi={setCreatingapi} />
       </div>
@@ -120,15 +116,19 @@ export default function Jobpage() {
             return (
               console.log(obj, "checking the obj "),
               (
-                <div className="col-md-3">
-                  <div className="card bg-dark text-white mb-4">
-                    {/* <Modal2   ></Modal2>
-                     */}
-
+                <div className="col-md-4">
+                  <div className="card bg-dark text-white mb-4 ">
                     <button
                       onClick={() => toggleModal2(obj._id)}
-                      class="btn-close btn-close-white cross "
+                      class="btn-close btn-close-white cross , cardfull "
                       // aria-label="Close"
+                      style={{
+                        padding: "5px",
+                        border: "2px solid rgb(98, 56, 56)",
+                        borderRadius: "2px",
+                        marginTop: "2px",
+                        marginLeft: "3px",
+                      }}
                     ></button>
 
                     {isOpen && (
@@ -144,53 +144,55 @@ export default function Jobpage() {
                     )}
 
                     <div className="card-body">
-                      {/* <button 
-                    
-                    onClick={() => toggleModal2(obj._id)}                   
-                    type="button" class="btn btn-info">update</button> */}
+                      <div className="card-teximgg">
+                        <div className="card-imgg">
+                          <img
+                            src="https://media.istockphoto.com/id/610003972/vector/vector-businessman-black-silhouette-isolated.jpg?s=612x612&w=0&k=20&c=Iu6j0zFZBkswfq8VLVW8XmTLLxTLM63bfvI6uXdkacM="
+                            className="logo"
+                            alt="Logo "
+                          ></img>
+                        </div>
 
-                      <h4 className="role">{obj.Role}</h4>
+                        <div className="texted">
+                          <div className="role">{obj.Role}</div>
 
-                      <img
-                        src="../../../Backend2/images/money-heist.jpg"
-                        className="logo"
-                        alt="Logo of company"
-                      ></img>
-                      <h3 className="card-title "> {obj.name}</h3>
+                          <div className="card-title "> {obj.name}</div>
 
-                      <br></br>
-                      
-                      <FontAwesomeIcon icon={faSuitcaseRolling} />
-                      {/* <span>
-                        {obj.icon1} {"  "}{" "}
-                      </span> */}
-                      <FontAwesomeIcon icon={faLocationCrosshairs} />
-                      <span>
-                        Location {obj.icon2}
-                        {"Mumbai"}
-                      </span>
-                      <FontAwesomeIcon icon={faWallet} />
-                      <span>{obj.icon3} </span>
+                          <div className="iconstyle">
+                            <FontAwesomeIcon icon={faSuitcaseRolling} />
+                            <p>5+year</p>
 
-                      <button
-                        type="submit"
-                        className="btn btn-success"
-                        onClick={() => CompanyPage(obj._id)}
+                            <FontAwesomeIcon icon={faLocationCrosshairs} />
+                            <span>
+                              {obj.icon2}
+                              {"Mumbai"}
+                            </span>
+                            <FontAwesomeIcon icon={faWallet} />
+                            <span>{obj.icon3} </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="buttonpara">
+                       
 
-                        // call back function
-                      >
-                        Apply
-                      </button>
+                        <div className="lastdate">Apply Before the 27</div>
+                        <button
+                          type="submit"
+                          className="btn btn-success"
+                          onClick={() => CompanyPage(obj._id)}
 
-                      <br></br>
-                      <p className="date">Apply Before the 27aug </p>
-                      <button
+                          // call back function
+                        >
+                          Apply
+                        </button>
+                      </div>
+                      {/* <button
                         onClick={() => openButton(obj._id)}
                         class="btn btn-primary"
                       >
                         Update
-                      </button>
-
+                      </button> */}
+                      {/* update button  */}
                       {issOpen && (
                         <Modal3
                           openButton={openButton}
@@ -211,37 +213,38 @@ export default function Jobpage() {
       </div>
 
       {/* /navigation */}
-{ bdata > 10 &&    (  <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-          <li class="page-item" onClick={() => pageChange(1)}>
-            <a class="page-link" href="#">
-              1
-            </a>
-          </li>
-          <li class="page-item" onClick={() => pageChange(2)}>
-            <a class="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#" onClick={() => pageChange(3)}>
-              3
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-        {/* <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      {bdata > 10 && (
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item" onClick={() => pageChange(1)}>
+              <a class="page-link" href="#">
+                1
+              </a>
+            </li>
+            <li class="page-item" onClick={() => pageChange(2)}>
+              <a class="page-link" href="#">
+                2
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" onClick={() => pageChange(3)}>
+                3
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+          {/* <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -281,7 +284,7 @@ export default function Jobpage() {
     </div>
   </div>
 </div> */}
-      </nav>
+        </nav>
       )}
     </div>
     // </div>
