@@ -1,6 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { BiUser } from "react-icons/bi";
 import Axios from "axios";
+import Typewriter from "typewriter-effect";
 
 import { Cookies, useCookies } from "react-cookie";
 // import { Link } from "react-router-dom";
@@ -180,7 +182,7 @@ export default function Dashboard() {
               data-bs-placement="right"
               data-bs-content="Right popover"
             >
-              Popover on right
+              <BiUser />
             </button>
           </div>
         </div>
@@ -260,6 +262,22 @@ export default function Dashboard() {
       </div>
     </div> */}
 
+
+      <div className="typewriter-search">
+       <div className="textdash">
+        <h3 className="h3-testdash">
+          Inspiring{" "}
+          <Typewriter
+            options={{
+              strings: ["Dashboard", "Welcome You"],
+              autoStart: true,
+              loop: true,
+            }}
+          />{" "}
+          Jobs for the future~!
+        </h3>
+      </div>
+
       {/* Normal text only  */}
       <div id="item-list">
         <div className="search-header">
@@ -282,6 +300,7 @@ export default function Dashboard() {
             </ol>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

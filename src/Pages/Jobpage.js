@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CiEdit } from "react-icons/ci";
 import Navbar from "./Navbar";
-
+import Typewriter from "typewriter-effect";
 import Axios from "axios";
 import {
   faLocationCrosshairs,
@@ -106,7 +106,28 @@ export default function Jobpage() {
         {/* <div className="row"> */}
 
         {/* <img src="https://img.freepik.com/premium-vector/business-people-using-face-mask-searching-work-illustration-design_24877-64136.jpg"  className="img1" ></img> */}
-        <h1 className=" text"> JOB PAGE</h1>
+        {/* <h1 className=" text"> JOB PAGE</h1>
+         */}
+        <div className="typename">
+          <Typewriter
+            options={{
+              strings: ["Job  Page", "Welcome You"],
+              autoStart: true,
+              loop: true,
+            }}
+            
+          />
+          {/* <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("Job  page")
+                // .pauseFor(60)
+                .deleteAll()
+                .typeString("Welcomes You")
+                .start();
+            }} */}
+          
+        </div>
 
         <Nodal creatingapi={creatingapi} setCreatingapi={setCreatingapi} />
       </div>
@@ -160,27 +181,23 @@ export default function Jobpage() {
                           <div className="card-title "> {obj.name}</div>
 
                           <div className="iconstyle">
-                          <div>
-                            <FontAwesomeIcon icon={faSuitcaseRolling} />
-                            <span>
-                            {"  5+year"}
-                            </span>
-                            
+                            <div>
+                              <FontAwesomeIcon icon={faSuitcaseRolling} />
+                              <span>{"  5+year"}</span>
                             </div>
                             <div>
-                            <FontAwesomeIcon icon={faLocationCrosshairs} />
-                            <span>
-                              {obj.icon2}
-                              {" Mumbai"}
-                            </span>
+                              <FontAwesomeIcon icon={faLocationCrosshairs} />
+                              <span>
+                                {obj.icon2}
+                                {" Mumbai"}
+                              </span>
                             </div>
-                              <div>
-
-                            <FontAwesomeIcon icon={faWallet} />
-                            <span>{obj.icon3} 
-                            {" As per..."}
-                            </span>
-                            
+                            <div>
+                              <FontAwesomeIcon icon={faWallet} />
+                              <span>
+                                {obj.icon3}
+                                {" As per..."}
+                              </span>
                             </div>
                           </div>
                         </div>
